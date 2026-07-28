@@ -1,43 +1,24 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-100 p-10">
-      <div className="mx-auto max-w-4xl">
+    <main className="flex min-h-screen items-center justify-center bg-slate-100">
+      <div className="rounded-xl bg-white p-10 shadow-lg text-center">
 
-        <h1 className="text-4xl font-bold">
+        <h1 className="mb-4 text-5xl font-bold text-slate-900">
           💰 Expense Tracker
         </h1>
 
-        <p className="mt-2 text-gray-600">
-          Welcome back!
+        <p className="mb-8 text-gray-600">
+          Track shared expenses with your partner.
         </p>
 
-        <div className="mt-8 rounded-xl bg-white p-6 shadow">
-
-          <h2 className="text-lg font-semibold">
-            Total Spent This Month
-          </h2>
-
-          <p className="mt-3 text-5xl font-bold text-green-600">
-            ₦0.00
-          </p>
-
-        </div>
-
-        <div className="mt-8 rounded-xl bg-white p-6 shadow">
-
-          <h2 className="text-xl font-semibold">
-            Recent Expenses
-          </h2>
-
-          <p className="mt-4 text-gray-500">
-            No expenses yet.
-          </p>
-
-          <button className="mt-6 rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700">
-            + Add Expense
-          </button>
-
-        </div>
+        <Link
+          href="/dashboard"
+          className="rounded-lg bg-blue-600 px-6 py-3 text-white hover:bg-blue-700"
+        >
+          Go to Dashboard
+        </Link>
 
       </div>
     </main>
